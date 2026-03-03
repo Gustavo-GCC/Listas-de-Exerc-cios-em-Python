@@ -16,15 +16,12 @@ b = float(input('Qual é o valor do coeficiente linear? '))
 c = float(input('Qual é o valor do termo independente? '))
 DISCRIMINANTE = math.pow(b, 2) - 4*a*c
 
-if DISCRIMINANTE < 0:
-    print('As raízes da equação não pertencem ao conjunto dos números reais.')
-elif DISCRIMINANTE == 0:
-    x = (-b) / 2*a
-    print('A única raiz da equação é', x)
-else:
-    x = ((-b) - math.sqrt(DISCRIMINANTE)) / 2*a
-    print('A primeira raiz é', x)
-    x = ((-b) + math.sqrt(DISCRIMINANTE)) / 2*a
-    print('E a segunda raiz é', x)
+# COMO O ENUNCIADO DIZ QUE HÁ DUAS RAÍZES, LOGO O DISCRIMINANTE É POSITIVO #
+
+x = ((-b) - math.sqrt(DISCRIMINANTE)) / 2*a
+print('A primeira raiz vale', x)
+
+x = ((-b) + math.sqrt(DISCRIMINANTE)) / 2*a
+print('E a segunda raiz vale', x)
 
 # Fim

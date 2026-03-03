@@ -10,7 +10,7 @@ salário_final: float = 0.0
 
 # Início 
 
-horas_trabalhadas = float(input('Você trabalho quantas horas neste mês? '))
+horas_trabalhadas = float(input('Você trabalhou quantas horas neste mês? '))
 valor_hora = float(input('Quanto você ganha por hora? '))
 desconto = float(input('Em porcentagem, quanto é descontado do seu salário bruto? '))
 dependentes = float(input('E quantos dependentes você tem? '))
